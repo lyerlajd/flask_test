@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>This is the second page</h1>
+    <p>Symbol: {{symbol}}</p>
+    <p>Chart Type: {{chart_type}}</p>
+    <p>Time Series: {{time_series}}</p>
+    <p>Start Date: {{start_date}}</p>
+    <p>End Date: {{end_date}}</p>
+
+    <div id="chart">
+        <embed src={{ chart | safe }} type="image/svg+xml">
+    </div>
+
+</body>
+</html>
